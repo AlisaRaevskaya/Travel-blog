@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<main class="container">
+    <form enctype="multipart/form-data" action="#"method="POST">
+    <h2>Вход</h2>
+    <div class="field">
+    <label for="login"></label>
+    <input id= "login"type="text"name="login"maxlength="15" minlength="8" placeholder="Логин">
+</div>
+<div class="field">
+    <label for="password"></label>
+    <input id="password" type="password" name="password" minlength="8" maxlength="15" placeholder="Пароль">
+</div>
+<div>
+    <label for="remember">Запомнить</label>
+    <input checked id="remember" type="checkbox" name="remeber">
+</div >
+    <a class="forget_orange" href="forget.html">Забыли пароль?</a>
+    <div>
+        <label>
+            <input type="submit" formaction="travelblog.html"value="Войти">
+        </label>
+    </div>
+    <p>или продолжить через</p>
+    <a href="Vk.com">Vkontakte</a>
+    <a href="Instagram">Instagram</a>
+    <a href="Twitter">Twitter</a>
+    <p><a class="rectangle" href="registration.html">Зарегистрироваться</a></p>
+</form>
+</main>
+</body>
+</html>

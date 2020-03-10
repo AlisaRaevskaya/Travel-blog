@@ -1,0 +1,16 @@
+@import "style.css";
+
+.picborder{
+    border: 4px solid orangered;
+    border-radius:5% ;
+    transition: 1s linear; 
+}
+.picborder:hover{
+    border: 4px solid white;
+}
+.cities{
+    font-style: italic;
+}
+.container{
+    text-align:center;
+}

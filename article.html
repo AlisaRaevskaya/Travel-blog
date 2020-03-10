@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Добавление статьи</title>
+</head>
+<body>
+    <div>
+    <form enctype="multipart/form-data" action="#" method="post">
+    <p><strong>Добавление статьи</strong></p>
+      <label for="author">Имя Автора</label>
+      <input type="text" id="author" minlength="4" maxlength="20">
+    </div>
+    <div>
+      <label for="photo">Фотографии</label>
+      <input type="file" id="photo" name="photo" multiple accept="image/*">
+    </div>
+    <div>
+      <label for="article_name">Заголовок</label>
+      <input id="article_name" type="text" minlength="10" maxlength="50">
+    </div>
+    <div>
+    <label for="description">Текст статьи</label>
+    <input type="textarea" id="description" rows="5" maxlength="1000" wrap="off" value="">
+    <input type="submit" value="Отправить">
+    </div>
+    </form>
+</html>
+</body>

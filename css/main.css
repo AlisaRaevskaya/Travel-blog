@@ -1,0 +1,42 @@
+@import "style.css";
+.alcolor {
+    color:orangered;
+}
+.alexcolor {
+	color:red;
+	text-decoration:none;
+}
+.dimcolor {
+	color:orange;
+}
+.authorization{
+	color:blue;
+	text-decoration: none;
+	font-size:20px;
+	text-align:right;
+	padding-bottom:50px;
+}
+img .ph1{
+	width:100%;
+	margin:0;
+	top: 0;
+    left: 0;
+	position:relative;}
+
+.pictitle{
+	position: absolute;
+	top: 180px;
+	left: 150px;
+	color:white;
+	font-size: 20px;
+	text-shadow: 0.1em 0.1em 0.2em;
+}
+
+.data{
+	color:orangered;
+}
+.subscription{
+background:grey;
+padding:10px 10px;
+color:white;
+}

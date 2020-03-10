@@ -1,0 +1,24 @@
+@import "style.css";
+
+body{
+    padding-left:20px;
+}
+.field{
+    width:auto;
+    height:20px;
+}
+.forget_orange{
+    color:darkgray;
+}
+input[type=submit]{
+    padding:10px 40px;
+    background:lightsalmon;
+    border: radius 30;
+}
+a{
+    text-decoration: none;
+}
+.regbutton{
+    padding:20px 20px;
+    background:lightsalmon;
+}
