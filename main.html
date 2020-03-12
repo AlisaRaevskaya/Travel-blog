@@ -10,49 +10,57 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
-  <div>
-    <a href="/" class="logo">LOGO</a>
-  <nav>
-    <ul class="nosign"id="menu_horizontal" >
-      <li>
+<header class="header">
+  <div class="logo">
+  <img class="logo"src="img/logo.png">
+      </div>
+  <nav class="menu container">
+    <ul class="nosign flex-row">
+        <li class="flex-1 content-center">
         <a href="main.html">Главная</a>
       </li>
-      <li>
+      <li class="flex-1">
         <a href="aboutme.html">Обо мне</a>
       </li>
-      <li>
+      <li class="flex-1 content-center">
         <a href="countries.html">Страны</a>
       </li>
-      <li>
+      <li class="flex-1 content-center">
         <a href="blog.html">Блог</a>
       </li>
     </ul>
   </nav>
-</div>
+  <div class="auth">
+      <a href="auth.html">Вход и Регистрация</a>
+    </div>
 </header>
-<main class="container">
-<div><img class ="Ph1" src="img/van3.jpeg">
-<h3 class="pictitle">Самостоятельные путешествия доступны каждому!</h3></div>
-<h1><strong> Блог путешественника Олега Иванова</strong></h1>
-<h2 ><em>Блог о самостоятельных путешествиях. Отчеты, отзывы, путеводители</em></h2>
-  <h3> Приветствую вас!</h3>
+<main class="flex-column container">
+<div class="flex-2 content-center">
+<img class ="Ph1" src="img/van3.jpeg"></div>
+<div class="flex-2 content-center">
+<h3 class="pictitle">Самостоятельные путешествия доступны каждому!</h3>
+<h1><strong> Блог путешественника Олега Иванова</strong></h1></div>
+<div class="flex-2 content-center" ><h2><em>Блог о самостоятельных путешествиях. Отчеты, отзывы, путеводители</em></h2></div>
+ <div class="flex-2 content-center"> <h3> Приветствую вас!</h3>
   <p><em>Я Олег Иванов, медиа-эксперт в сфере авиации, путешествий и фотографии. Это авторский проект о путешествиях и авиации, необычных местах, ярких идеях и полезных советах.</em></p>
-  <p><i>Каждый день интересные заметки выходят на моей странике в Facebook и в Instagram, а также на мой канал на YouTube и в Telegram.</i></p>
-  <img src="img/Ivan1.jpg">
-  <div>
+  <p><i>Каждый день интересные заметки выходят на моей странике в Facebook и в Instagram, а также на мой канал на YouTube и в Telegram.</i></p></div>
+  <div class="flex-2 content-center"><img src="img/Ivan1.jpg"></div>
+  <div class="flex-2 content-center">
   <h2>На этом сайте вы найдете:</h2>
 <ul class="typeleft">
-    <li>статьи о моих путешествиях по миру</li>
+    <li class="submenu">статьи о моих путешествиях по миру</li>
     <li>интервью с местными жителями из зарубежных стран</li>
     <li>интервью с россиянами, которые делятся историями про переезд за границу</li>
     <li>истории других путешественников</li>
     <li>лайфхаки про путешествия</li>
   </ul>
 </div>
-  <h1 class="oblique">Дневник путешественника</h1>
-<div>
-  <h2 class="heador">Лучшие подарки путешественникам: топ-12 идей на День всех влюбленных, 23 февраля и 8 марта 2020</h2 >
+<div class="flex-2 content-center">
+<div class="flex-column content-center"> 
+  <div "flex-3 content-center">
+  <h1 class="oblique">Дневник путешественника</h1></div>
+  <div class="flex-3 content-center">
+    <h2 class="underline">Лучшие подарки путешественникам: топ-12 идей на День всех влюбленных, 23 февраля и 8 марта 2020</h2>
   	<h3>Автор</h3>
     <a class="alcolor" href="Aleksei.html">Алексей Петров</a>
     <h3>Дата публикации</h3>
@@ -61,8 +69,8 @@
     <img src="img/podarok.jpg" alt="podarok">
   <p><a class="rectangle" href="podarok.html">Читать далее</a></p>
 </div>
-<div>
-  <h2 class="heador">Зеленая карта на автомобиль: стоимость 2020, как купить онлайн и отзыв о Полис 812</h2 >
+<div class="flex-3 content-center">
+  <h2 class="underline">Зеленая карта на автомобиль: стоимость 2020, как купить онлайн и отзыв о Полис 812</h2 >
   	<h3>Автор</h3>
     <a class="alexcolor" href="Aleksandr.html">Александр Марченков</a>
     <h3>Дата публикации</h3>
@@ -71,8 +79,8 @@
     <img src="img/greencard.jpg" alt="Greencard">
   <p><a class="rectangle" href="greencard.html">Читать далее</a></p>
   </div>
-  <div>
-  <h2 class="heador">Лучшие цитаты о путешествиях - известные высказывания и афоризмы</h2 >
+  <div class="flex-3 content-center">
+  <h2 class="underline">Лучшие цитаты о путешествиях - известные высказывания и афоризмы</h2>
   	<h3>Автор</h3>
     <a class="dimcolor" href="Dmitry.html">Дмитрий Ковчук</a>
     <h3>Дата публикации</h3>
@@ -81,26 +89,36 @@
     <img src="img/travelquotes.jpg" alt="Quotes">
   </p><a class="rectangle" href="quotes.html">Читать далее</a></p>
 </div>
+</div>
+</div>
+</main>
+<div class="flex-column">
+<div class="flex-sidebar4 ">
 <form enctype="multipart/form-data" action="#" method="post">
-<p>Поиск по сайту</p>
-<div>
+<p><strong>Поиск по сайту<strong></p>
   <label for="search"></label>
   <input type="search" value="Поиск" minlength="5" maxlength="15">
-  </div>
 </form>
-<div>
-  <a class="authorization" href="auth.html">Вход и Регистрация</a>
-  </div>
-<div>
+ </div>
+<div class="flex-sidebar4 ">
   <strong>Подписывайтесь!</strong>
      <label for="subscription"></label>
      <input type="email" id="subscription" name="subscription" value="email">
    <p><input type="submit" value="Подписаться!"></p>
      </div>
-     </main>
-  <footer>
-    <div>
-    <section>
+  <div class="flex-sidebar4">
+<h3>Статистика</h3>
+<ul class="nosign submenu">
+  <li>23 путеводителя</li>
+  <li>60 тысяч комментариев</li>
+  <li>18 тысяч авторов</li>
+  </ul>
+</div>
+</strong>
+   </div>
+   
+    <footer class="flex-row">
+      <div class="flex-5">
       <h3>Мои контакты</h3>
       <nav>
       <ul class="nosign">
@@ -115,8 +133,8 @@
         </li>
       </ul>
     </nav>
-  </section>
   </div>
-</footer>
+  </footer>
+
 </body>
 </html>
