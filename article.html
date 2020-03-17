@@ -2,27 +2,68 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="css/article.css">
 <title>Добавление статьи</title>
 </head>
 <body>
-    <div>
-    <form enctype="multipart/form-data" action="#" method="post">
-    <p><strong>Добавление статьи</strong></p>
-      <label for="author">Имя Автора</label>
-      <input type="text" id="author" minlength="4" maxlength="20">
+    <form enctype="multipart/form-data" action="#" method="post" name="add_article">
+      <div><h2>Добавление статьи</h2></div>
+      <div><label for="author">Введите Имя </label>
+      <input required type="text" class="author" id="author" minlength="4" maxlength="20">
+       <span></span>
     </div>
     <div>
+      <div>
+        <p class="exp">Опыт путешествий</p>
+            <label>
+               1-2 лет
+                <input required type="radio" name="experience" value="white">
+            </label>
+            <label>
+                2-5 года
+                <input required type="radio" name="color" value="black">
+            </label>
+            <label>
+               более 5 лет
+                <input required type="radio" name="color" value="gray">
+                <span></span>
+            </label>
+        </div>
+    <div>
+      <label for="data">Дата</label>
+      <input type="data" class="data" name="data" maxlength="8" >
+       <span></span>
+    </div>
+    <div>
+      <label for="tel">Номер телефона</label>
+      <input required type="tel" class="phone" placeholder="+7 999 999 99" minlength="11">
+       <span></span>
+    </div>
+    <div>
+      <label for="city">Город</label>
+      <select size="1" id="city" class="city"name="city">
+        <option value="Moscow">Москва</option>
+        <option value="SaintPetersburg">Санкт-Петербург</option>
+        <option value="Kazan">Казань</option>
+        <option value="Ekateringurg">Екатеринбург</option>
+      </select>
+       <span></span>
+    </div>
+   <div>
       <label for="photo">Фотографии</label>
-      <input type="file" id="photo" name="photo" multiple accept="image/*">
+      <input type="file" id="photo"class="photo" name="photo" multiple accept="image/*">
     </div>
     <div>
       <label for="article_name">Заголовок</label>
-      <input id="article_name" type="text" minlength="10" maxlength="50">
+      <input required id="article_name"class="title" type="text" minlength="10" maxlength="50">
+       <span></span>
     </div>
     <div>
-    <label for="description">Текст статьи</label>
-    <input type="textarea" id="description" rows="5" maxlength="1000" wrap="off" value="">
-    <input type="submit" value="Отправить">
+    <label for="textarea">Текст статьи</label>
+    <input required type="textarea"class="textarea"id="textarea" col="10" rows="5" maxlength="1000" wrap="off">
+     <span></span>
+  </div>
+    <div><input type="submit" value="Отправить">
     </div>
     </form>
 </html>

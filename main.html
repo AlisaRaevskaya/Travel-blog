@@ -10,131 +10,185 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header">
+<header class="flex-row space-around nowrap">
   <div class="logo">
-  <img class="logo"src="img/logo.png">
+  <img src="img/logo.png">
       </div>
-  <nav class="menu container">
-    <ul class="nosign flex-row">
-        <li class="flex-1 content-center">
+  <nav class="container menu">
+    <ul class="nosign flex-row content-center">
+        <li>
         <a href="main.html">Главная</a>
       </li>
-      <li class="flex-1">
+      <li>
         <a href="aboutme.html">Обо мне</a>
       </li>
-      <li class="flex-1 content-center">
-        <a href="countries.html">Страны</a>
+      <li><a href="countries.html">Страны</a>
+        <ul class="dropmenu nosign content-center">
+          <li>
+            <a href="#">Азия</a>
+          </li>
+          <li>
+            <a href="#">Европа</a>
+          </li>
+          <li>
+            <a href="#">Америка</a>
+          </li>
+        </ul>
       </li>
-      <li class="flex-1 content-center">
+      <li class="content-center">
         <a href="blog.html">Блог</a>
       </li>
     </ul>
-  </nav>
-  <div class="auth">
-      <a href="auth.html">Вход и Регистрация</a>
+  </nav> 
+  <div class="auth space-around">
+      <a href="#auth">Вход и Регистрация</a>
     </div>
 </header>
-<main class="flex-column container">
-<div class="flex-2 content-center">
-<img class ="Ph1" src="img/van3.jpeg"></div>
-<div class="flex-2 content-center">
-<h3 class="pictitle">Самостоятельные путешествия доступны каждому!</h3>
-<h1><strong> Блог путешественника Олега Иванова</strong></h1></div>
-<div class="flex-2 content-center" ><h2><em>Блог о самостоятельных путешествиях. Отчеты, отзывы, путеводители</em></h2></div>
- <div class="flex-2 content-center"> <h3> Приветствую вас!</h3>
+  <main class="container flex-row space-between nowrap">
+<div class="flex-7 flex-column space-around">
+<section class="content-center">
+  <div><h3 class="pictitle">Самостоятельные путешествия доступны каждому!</h3>
+  <h1><strong>Блог путешественника Олега Иванова</strong></h1>
+  <h3><em>Блог о самостоятельных путешествиях. Отчеты, отзывы, путеводители</em></h3></div>
+<img class="content-center" src="img/van3.jpeg">
+ <div class=" content-center"> 
+   <h3> Приветствую вас!</h3>
   <p><em>Я Олег Иванов, медиа-эксперт в сфере авиации, путешествий и фотографии. Это авторский проект о путешествиях и авиации, необычных местах, ярких идеях и полезных советах.</em></p>
-  <p><i>Каждый день интересные заметки выходят на моей странике в Facebook и в Instagram, а также на мой канал на YouTube и в Telegram.</i></p></div>
-  <div class="flex-2 content-center"><img src="img/Ivan1.jpg"></div>
-  <div class="flex-2 content-center">
-  <h2>На этом сайте вы найдете:</h2>
-<ul class="typeleft">
-    <li class="submenu">статьи о моих путешествиях по миру</li>
-    <li>интервью с местными жителями из зарубежных стран</li>
-    <li>интервью с россиянами, которые делятся историями про переезд за границу</li>
-    <li>истории других путешественников</li>
-    <li>лайфхаки про путешествия</li>
-  </ul>
+  <p><i>Каждый день интересные заметки выходят на моей странике в Facebook и в Instagram, а также на мой канал на YouTube и в Telegram.</i></p>
+  </div>
+  <img class="content-center" src="img/Ivan1.jpg">
+</section>
+  <div class="oblique content-center">
+  <h1>Дневник путешественника</h1>
 </div>
-<div class="flex-2 content-center">
-<div class="flex-column content-center"> 
-  <div "flex-3 content-center">
-  <h1 class="oblique">Дневник путешественника</h1></div>
-  <div class="flex-3 content-center">
-    <h2 class="underline">Лучшие подарки путешественникам: топ-12 идей на День всех влюбленных, 23 февраля и 8 марта 2020</h2>
-  	<h3>Автор</h3>
-    <a class="alcolor" href="Aleksei.html">Алексей Петров</a>
-    <h3>Дата публикации</h3>
+<section class="content-center">
+<div class="flex-row space-between"> 
+  <div class="content-center">
+    <h4 class="underline">Лучшие подарки путешественникам: топ-12 идей на День всех влюбленных, 23 февраля и 8 марта</h4>
+  	<h4>Автор <a class="alcolor" href="Aleksei.html">Алексей Петров</a></h4>
+    <p>Дата публикации</p>
      <p class="data">02/02/2020</p>
-    <article><em>Впереди целый месяц праздников: День всех влюблённых, 23 февраля и 8 марта.До Дня Святого Валентина осталось всего полторы недели, а доставка товаров с AliExpress из Китая в 2020 по понятным причинам теперь под очень большим вопросом  А потому ловите 12 идей для подарков Вашим любимым, которые доставят всего за пару дней  А так как Вы читаете блог о путешествиях, то и подарки мы выбрали на любой вкус и кошелёк, унисекс, но только для настоящих путешественников!</em></article>
-    <img src="img/podarok.jpg" alt="podarok">
+    <article><em>Впереди целый месяц праздников: День всех влюблённых, 23 февраля и 8 марта.До Дня Святого Валентина осталось всего полторы недели, а доставка товаров с AliExpress из Китая в 2020 теперь под очень большим вопросом.А потому ловите 12 идей подарков Вашим любимым, которые доставят всего за пару дней.</em></article>
+    <img class="picture" src="img/podarok.jpg" alt="podarok">
   <p><a class="rectangle" href="podarok.html">Читать далее</a></p>
 </div>
-<div class="flex-3 content-center">
-  <h2 class="underline">Зеленая карта на автомобиль: стоимость 2020, как купить онлайн и отзыв о Полис 812</h2 >
-  	<h3>Автор</h3>
-    <a class="alexcolor" href="Aleksandr.html">Александр Марченков</a>
-    <h3>Дата публикации</h3>
+<div class="content-center">
+  <h4 class="underline">Зеленая карта на автомобиль: стоимость 2020, как купить онлайн и отзыв о Полис 812</h4 >
+  	<h4>Автор <a class="alexcolor" href="Aleksandr.html">Александр Марченков</a></h4>
+    <p>Дата публикации</p>
      <p class="data">20/01/2020</p>
-    <article><em>Зеленая карта на автомобиль необходима при поездке на машине за границу: в Белоруссию и другие страны СНГ, в Европу (например, Финляндию, Польшу, Латвию, Литву, Эстонию и т.д.) Зеленая карта или страховка Green Card - это страхование автогражданской ответственности, т.е. по сути аналог ОСАГО, но действующий за пределами России. Делимся актуально информацией по Зеленой карте на 2020 год: сколько стоит, от чего зависит цена, территория действия, где купить и как оформить онлайн + наш опыт и отзыв о покупке Зеленой карты в Полис 812</em></article>
-    <img src="img/greencard.jpg" alt="Greencard">
+    <article><em>Зеленая карта на автомобиль необходима при поездке на машине за границу: в Белоруссию и другие страны СНГ, в Европу (например, Финляндию, Польшу, Латвию, Литву, Эстонию и т.д.).елимся актуально информацией по Зеленой карте на 2020 год:</em></article>
+    <img class="picture" src="img/greencard.jpg" alt="Greencard">
   <p><a class="rectangle" href="greencard.html">Читать далее</a></p>
   </div>
-  <div class="flex-3 content-center">
-  <h2 class="underline">Лучшие цитаты о путешествиях - известные высказывания и афоризмы</h2>
-  	<h3>Автор</h3>
-    <a class="dimcolor" href="Dmitry.html">Дмитрий Ковчук</a>
-    <h3>Дата публикации</h3>
+  <div class="content-center" >
+  <h4 class="underline">Лучшие цитаты о путешествиях - известные высказывания и афоризмы</h4>
+  	<h4>Автор <a class="dimcolor" href="Dmitry.html">Дмитрий Ковчук</a></h4>
+    <p>Дата публикации</p>
      <p class="data">10/01/2020</p>
-    <article><em>О путешествиях высказывались многие писатели, актеры, философы и древние мудрецы... "Дневник путешественника" представляет подборку лучших афоризмов и цитат о путешествиях от таких известных личностей, как Марк Твен, Джек Лондон, Эрнест Хемингуэй, Рэй Брэдбери, Стивен Кинг, Агата Кристи, Лорд Байрон, Редьярд Киплинг, Пауло Коэльо, Джон Стейнбек, Джек Керуак, Макс Фрай, Генри Миллер, Уильям Берроуз, Альбер Камю, Карлос Кастанеда, Роберт Льюис Стивенсон, Ганс Христиан Андерсен, Льюис Кэррол, Анна Ахматова, Иван Бунин, Константин Хабенский, Владимир Высоцкий, а также Махатма Ганди, Лао-Цзы, Далай Лама, Будда, Пророк Мухаммед, Святой Августин, Аристотель и многие другие... Самая полная подборка 2020</em></article>
-    <img src="img/travelquotes.jpg" alt="Quotes">
+    <article><em>О путешествиях высказывались многие писатели, актеры, философы и древние мудрецы... "Дневник путешественника" представляет подборку лучших афоризмов и цитат о путешествиях от таких извеcтных личностей..Самая полная подборка 2020</em></article>
+    <img class="picture" src="img/travelquotes.jpg" alt="Quotes">
   </p><a class="rectangle" href="quotes.html">Читать далее</a></p>
+</div> 
+</section>
+</div>
+
+<div class="flex-5 flex-column ">
+  <div class="flex-sidebar1">
+    <form enctype="multipart/form-data" action="#" method="post">
+    <p><strong>Поиск по сайту</strong></p>
+      <label for="search"></label>
+      <input class="search"type="search" value="Поиск" minlength="5" maxlength="15">
+    </form>
+    </div>
+  <div class="flex-sidebar2">
+    <h2>На этом сайте вы найдете:</h2>
+  <ul class="nosign">
+      <li class="submenu">статьи о моих путешествиях по миру;</li>
+      <li>интервью с местными жителями из зарубежных стран;</li>
+      <li>интервью с россиянами, которые делятся историями про переезд за границу;</li>
+      <li>истории других путешественников;</li>
+      <li>лайфхаки про путешествия;</li>
+    </ul>
+  </div>
+<div class="flex-sidebar3">
+  <p><strong>Подписка на рассылку!</strong></p>
+  <div>
+  <label for="subscription">Введите Ваш e-mail и нажмите "Подписаться"
+  </label>
+  <input type="email" id="subscription" name="subscription" value="Ваш email">
+   <p><input class="sub" type="submit" value="Подписаться!"></p>
 </div>
 </div>
+<div class="flex-sidebar4">
+  <h3>Ближайшие поездки</h3>
+  <img src="img/traveldiary.png" alt="trips">
 </div>
-</main>
-<div class="flex-column">
-<div class="flex-sidebar4 ">
-<form enctype="multipart/form-data" action="#" method="post">
-<p><strong>Поиск по сайту<strong></p>
-  <label for="search"></label>
-  <input type="search" value="Поиск" minlength="5" maxlength="15">
-</form>
- </div>
-<div class="flex-sidebar4 ">
-  <strong>Подписывайтесь!</strong>
-     <label for="subscription"></label>
-     <input type="email" id="subscription" name="subscription" value="email">
-   <p><input type="submit" value="Подписаться!"></p>
-     </div>
-  <div class="flex-sidebar4">
-<h3>Статистика</h3>
-<ul class="nosign submenu">
+  <div class="flex-sidebar5">
+<h3 class="content-center">Статистика:</h3>
+<div>
+<ul>
   <li>23 путеводителя</li>
   <li>60 тысяч комментариев</li>
   <li>18 тысяч авторов</li>
   </ul>
 </div>
-</strong>
-   </div>
-   
-    <footer class="flex-row">
-      <div class="flex-5">
+</div>
+</div>
+</div>
+</main>
+
+<footer class="flex-row space-around">
+  <div class="flex-3"><img class="logo"src="img/logo.png"></div>
+  <div class="shortcut flex-3">
+<p>Дневник путешественника - это тревел-блог о самостоятельных путешествиях с детьми.</p>
+<p> Истории путешествий, интересные статьи по странам, фото и видео из поездок, лайфхаки, секреты онлайн-заработка в интернете, полезные советы путешественникам и нюансы путешествий</p>
+<p>Сайт Дневник путешественника - это блог о самостоятельных путешествиях без предрассудков, без сомнений, без границ! </p>
+</div>
+      <div class="flex-3 quickref">
+        <h4>Быстрые ссылки:</h4>
+          <ul>
+          <li><a href="#">Скидки и лучшие цены</a></li>
+          <li><a href="#">Лайфхаки</a></li>
+          <li><a href="#">Наши поездки</a></li>
+          <li><a href="#">Советы путешественникам</a></li>
+          <li><a href="#">Купоны и промокоды</a></li>
+          <li> <a href="#">Распродажи</a></li>
+        </ul>
+         </div>
+    <div class="social flex-3">
       <h3>Мои контакты</h3>
       <nav>
-      <ul class="nosign">
-        <li>email:olegtraveller@mail.ru</li>
-        <li>
-          <a href="Vk.com">Vkontakte</a>
-        </li>
-          <li><a href="Instagram">Instagram</a>
-          </li>
-          <li>
-          <a href="Twitter">Twitter</a>
-        </li>
-      </ul>
-    </nav>
+        <a href="#" class="facebook"></a>
+            <a href="#" class="twitter"></a>
+            <a href="#" class="youtube"></a>
+            <a href="#" class="instagram"></a>
   </div>
   </footer>
+
+  <section class="bg-modal" id="auth">
+  <form class="flex-column" action="#" method="POST">
+    <h2>Вход</h2>
+    <div>
+    <input id="login"type="text"name="login"maxlength="15" minlength="8" placeholder="Логин">
+  </div>
+  <div>
+    <input id="password" type="password" name="password" minlength="8" maxlength="15" placeholder="Пароль"></div>
+    <div><label for="remember">Запомнить</label>
+    <input checked id="remember" type="checkbox" name="remeber"></div>
+   <div><p><a class="forget_orange" href="forget.html">Забыли пароль?</a></p></div> 
+    <div><input class="rectangle" type="submit" formaction="travelblog.html"value="Войти">
+    </div>
+    <div>
+    <p>или продолжить через</p>
+    <a href="Vk.com">Vkontakte</a>
+    <a href="Instagram">Instagram</a>
+    <a href="Twitter">Twitter</a>
+  </div>
+  <p class="reg"><a href="registration.html">Зарегистрироваться</a></p>
+  <a class="close-modal" href="#0">+</a>
+</form>
+</section>
 
 </body>
 </html>

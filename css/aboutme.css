@@ -1,5 +1,82 @@
 @import "style.css";
+@import "flex.css";
 
+article{
+    text-align: center;
+    margin:10px 5px;
+    font-size: 18px;
+}
+.list_countries{
+    margin-top:20px;
+    margin-left:10px;
+}
 .colorhref{
+   border:1px solid grey;
+   padding:10px 10px;}
+.map{
+    border:2px solid orangered;
+    margin-top:10px;
+}
+.auth{
+    font-size:15px;
+    margin-right:10px; 
+    margin-bottom:10px;
+    display:flex; 
+    justify-content: flex-end;
+}
+.auth a{
+    border:1px solid blue;
+    padding:10px;
+}
+.logo{
+    margin-left:30px;}
+.rules{
+    margin-top:20px;
+    margin-left:10px;
+    background: orange;
+    border:3px solid white;
+    padding:15px;
+}
+.menu ul{
+    position:relative;
+    margin:0;
+    padding:0;
+}
+ul.dropmenu{
+     position:absolute;
+     display:none;
+ }
+.menu li:hover ul{
+    display:block;
+} 
+.menu li{
+    flex-grow:1;
+}
+.menu li a{
+    display:block;
+	color:black;
+	padding:15px 40px ;
+	background:orange;
+	border-right:1px solid orangered;
+}
+.menu li a:hover{
+background:white;
+color:black;
+transition: all 0,2 ease;
+}
+.dropmenu li{
+border-right:1px solid orangered;
+}
+.colorhref ol{
+    padding-left: 10px;
+}
+.colorhref li a{
+    color:black;
+    font-style: italic;
+    font-size: 20px;
+    padding-left:8px;
+    margin-top: 10px;
+}
+.colorhref li a:hover{
     color:orangered;
 }

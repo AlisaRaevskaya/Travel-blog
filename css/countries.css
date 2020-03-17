@@ -1,16 +1,65 @@
 @import "style.css";
+@import "flex.css";
 
 .picborder{
-    border: 4px solid orangered;
-    border-radius:5% ;
-    transition: 1s linear; 
+    border: 4px solid rgb(185, 169, 163);
+    opacity: 0.8;
+    cursor: pointer;
+    overflow: hidden;
 }
 .picborder:hover{
-    border: 4px solid white;
+    opacity:1;
+    transform: scaleY(1.5); 
+}
+.logo,
+.auth{
+    margin-top:20px;
+}
+.auth{
+    justify-content: start;
 }
 .cities{
     font-style: italic;
 }
-.container{
-    text-align:center;
+.menu ul{
+    position:relative;
+    margin-right:-10px;
+    padding:0;
+}
+ul.dropmenu{
+     position:absolute;
+     display:none;
+ }
+.menu li:hover ul{
+    display:block;
+} 
+.menu li{
+    flex-grow:1;
+}
+.menu li a{
+    display:block;
+	color:black;
+	padding:15px 40px ;
+	background:orange;
+	border-right:1px solid orangered;
+}
+.menu li a:hover{
+background:white;
+color:black;
+transition: all 0,2 ease;
+}
+.dropmenu li{
+border-right:1px solid orangered;
+}
+h1{
+font-size:30px;
+font-style: italic;
+padding:10px 0;
+}
+h3{
+ font-weight: bold;
+ padding:15px 0;
+}
+div.single{
+    padding:0 10px 10px;
 }

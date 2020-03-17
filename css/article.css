@@ -1,0 +1,49 @@
+@import "style.css";
+@import "flex.css";
+
+form{
+margin:10px;
+}
+textarea{
+	overflow: scroll;
+	height:100px;
+}
+input:focus{
+    outline:none;
+    border-color:orange;
+}
+label{
+    padding-left:10px;
+}
+.exp,h2{
+    padding:10px;}
+input{
+    margin-top:10px;
+    height:30px;
+}
+input[type="submit"]{
+padding:20px 30px;
+background:orangered;
+border-radius:20px;
+text-align: center;
+}
+
+input[type="textarea"]:invalid,
+input:out-of-range,
+input[type="text"]:invalid{
+	border:1px solid red;
+}
+textarea:valid,
+input:in-range,
+input[type="text"]:valid{
+	border:1px solid orangered;
+}
+
+form :required:focus:valid + span:before{
+	content:"\2714";
+	color:green;
+	font-size:15px;
+	margin-bottom:10px;
+	margin-left:50px;
+}
+

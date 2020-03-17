@@ -1,5 +1,55 @@
 @import "style.css";
+@import "flex.css";
 
 img{
     margin-top:20px;
 }
+.layer{
+    overflow:hidden;
+    width:400px;
+    height:350px;
+}
+}
+.logo{
+    margin:10px
+    padding:10px;
+    border:1px solid orangered;
+
+}
+	.menu ul{
+        position:relative;
+        padding:0;
+    }
+    ul.dropmenu {
+         position:absolute;
+         display:none;
+         margin-right:-7px;
+     }
+    .menu li:hover ul{
+        display:block;
+    }
+    .menu li{
+        flex-grow:1;
+        justify-content:space-around;	
+      }
+      .menu li a{
+        display:block;
+        color:black;
+        padding:15px 40px ;
+        background:orange;
+        border-right:1px solid orangered;
+      }
+      .menu li a:hover {
+        background-color: white;
+        color:orangered;
+        transition: all 0,3 ease;
+        display:block;
+      }
+      .dropmenu a{
+        border-top: 1px solid orangered;
+    }
+    .dropmenu li{
+    border-right: none;
+    margin-right:5px;
+    }
+      .auth{

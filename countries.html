@@ -7,91 +7,131 @@
   <link rel="stylesheet" href="css/countries.css">
   </head>
   <body>
-   <header class="header">
-  <div class="logo">
-  <img class="logo"src="img/logo.png">
-      </div>
-  <nav class="menu container">
-    <ul class="nosign flex-row">
-        <li class="flex-1 content-center">
-        <a href="main.html">Главная</a>
-      </li>
-      <li class="flex-1">
-        <a href="aboutme.html">Обо мне</a>
-      </li>
-      <li class="flex-1 content-center">
-        <a href="countries.html">Страны</a>
-      </li>
-      <li class="flex-1 content-center">
-        <a href="blog.html">Блог</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="auth">
-      <a href="auth.html">Вход и Регистрация</a>
-    </div>
-</header>
-    </header>
-    <main class="container">
-    <h1><strong>Страны</strong></h1>
-    <div>
-    <p>Список стран, в которых побывали авторы блога Дневник путешественника.</p>
-    <p>Во многих странах мы были неоднократно, а в некоторых и жили от месяца до года. Помимо России, мы жили в Болгарии, Турции, Таиланде и Малайзии (остров Лангкави).</p>
-</div>
-<ul class="nosign">
-<li>
-  <div>
-  <h3><strong>Марокко</strong></h3>
-  <a href="Marocco.html"><img class="picborder" src="Img/Marocco.jpg" alt= "Marocco"></a>
-  <p class="cities">Марокко / Агадир, Айт-Бен-Хадду, Атлас, Волюбилис, Дадес, Ифран, Касабланка, Легзира, Марракеш, Мирлефт, Рабат, Тингир, Тинедждад, Тодра, Уарзазат, Узуд, Эр-Рашидия, Эс-Суэйра</p>
-  </div>
-  </li>
-<li>
-  <div>
-    <h3><strong>Иордания</strong></h3>
-    <a href ="Iordan.html"><img class="picborder"src="Img/Iordan.jpg"></a>
-      </div>
-      </li>
-      <div>
-    <li><h3><strong>Черногория</strong></h3>
-        <a href="Chernogorya.html">
-          <img class="picborder" src="Img/Ch.jpg" alt="Черногория"></a>
-          <p class="cities">Черногория / Дурмитор, Ловчен, Острог, Тиват, Котор, Будва, Бечичи, Свети-Стефан, Херцег-Нови, Цетине, Доброта, Рисан, Пераст, Подгорица, Бар, Никшич, Плужине, Жабляк</p>
-</div>
-</li>
-<li>
-  <div>
-  <h3><strong>Латвия</strong></h3>
-  <a href="Latvia.html"><img class="picborder" src="img/latviya.jpg" alt="Latvia"></a>
-</div>
-</li>
-<li>
-  <div>
-  <h3 ><strong>Россия</strong></h3>
-  <a href="Russia.html"><img class="picborder" src="img/russia.jpg" alt="Russia"></a>
-  <p class="cities">Россия / Москва, Переславль-Залесский, Сочи, Пятигорск, Лермонтов, Анапа, Джемете</p>
-</div>
-</li>
-      </ul>
-    </main>
-    <footer>
-      <div>
-        <h3>Мои контакты</h3>
-        <nav>
-        <ul class="nosign">
-          <li>email:olegtraveller@mail.ru</li>
-          <li>
-            <a href="Vk.com">Vkontakte</a>
-          </li>
-            <li><a href="Instagram">Instagram</a>
-            </li>
+    <header class="flex-row space-between nowrap">
+      <div class="logo">
+      <img class="logo"src="img/logo.png">
+          </div>
+      <div class="auth">
+            <a href="#auth">Вход и Регистрация</a>
+          </div>
+      <nav class="menu flex-end">
+        <ul class="nosign flex-row content-center">
             <li>
-            <a href="Twitter">Twitter</a>
+            <a href="main.html">Главная</a>
+          </li>
+          <li>
+            <a href="aboutme.html">Обо мне</a>
+          </li>
+          <li><a href="countries.html">Страны</a>
+            <ul class="dropmenu nosign content-center">
+              <li>
+                <a href="#">Азия</a>
+              </li>
+              <li>
+                <a href="#">Европа</a>
+              </li>
+              <li>
+                <a href="#">Америка</a>
+              </li>
+            </ul>
+          </li>
+          <li class="content-center">
+            <a href="blog.html">Блог</a>
           </li>
         </ul>
-      </nav>
+      </nav> 
+      
+    </header>
+    <div class="content-center">
+      <h1>Страны</h1>
+    <p>Список стран, в которых побывали авторы блога Дневник путешественника.</p>
+  <p>Во многих странах мы были неоднократно, а в некоторых и жили от месяца до года.</p>
     </div>
-  </footer>
+    <main class="container flex-row wrap content-center">
+     <div class="single">
+<h3>Марокко</h3>
+  <a href="Marocco.html"><img class="picborder" src="Img/Marocco.jpg" alt= "Marocco"></a>
+  </div>
+  <div class="single">
+    <h3>Иордания</h3>
+    <a href ="Iordan.html"><img class="picborder"src="Img/Iordan.jpg"></a>
+      </div>
+      <div class="single">
+    <h3>Черногория</h3>
+        <a href="Chernogorya.html">
+          <img class="picborder" src="Img/Ch.jpg" alt="Черногория"></a>
+          <!-- <p class="cities">Черногория / Дурмитор, Ловчен, Острог, Тиват, Котор, Будва, Бечичи, Свети-Стефан, Херцег-Нови, Цетине, Доброта, Рисан, Пераст, Подгорица, Бар, Никшич, Плужине, Жабляк</p> -->
+</div>
+
+  <div class="single">
+  <h3>Латвия</h3>
+  <a href="Latvia.html"><img class="picborder" src="img/latviya.jpg" alt="Latvia"></a>
+</div>
+
+
+  <div class="single">
+  <h3>Россия</h3>
+  <a href="Russia.html"><img class="picborder" src="img/russia.jpg" alt="Russia"></a>
+  <!-- <p class="cities">Россия / Москва, Переславль-Залесский, Сочи, Пятигорск, Лермонтов, Анапа, Джемете</p> -->
+</div>
+
+  <div class="single">
+  <h3>Испания</h3>
+  <a href="Spain.html"><img class="picborder" src="img/spain.jpg" alt="Russia"></a>
+  <!-- <p class="cities">Испания / остров Майорка, Салоу, Барселона</p> -->
+</div>
+
+  <div class="single">
+  <h3>Гонконг</h3>
+  <a href="Honkong.html"><img class="picborder" src="img/gonkong.jpg" alt="Honkong"></a>
+</div>
+
+  <div class="single">
+  <h3>Болгария</h3>
+  <a href="bulgaria.html"><img class="picborder" src="img/bulgaria.jpg" alt="Bulgaria"></a>
+  <!-- <p class="cities">Варна, Золотые Пески, Калиакра, Русалка, Несебр, Бургас, Бяла, Равда, Елените, Свети Влас</p> -->
+</div>
+
+  <div class="single">
+  <h3 >Танзания</h3>
+  <a href="tanzania.html"><img class="picborder" src="img/tanzania.jpg" alt="Tanzania"></a>
+  <p class="cities">Танзания / остров Занзибар</p>
+</div>
+
+  <div class="single">
+  <h3 >Филиппины</h3>
+  <a href="Phillipines.html"><img class="picborder" src="img/phil.jpg" alt="Phillipines"></a>
+  <!-- <p class="cities">Манила, остров Миндоро</p> -->
+</div>
+    </div>
+    </main>
+    <footer class="flex-row space-around">
+      <div class="flex-3"><img class="logo"src="img/logo.png"></div>
+      <div class="shortcut flex-3">
+    <p>Дневник путешественника - это тревел-блог о самостоятельных путешествиях с детьми.</p>
+    <p> Истории путешествий, интересные статьи по странам, фото и видео из поездок, лайфхаки, секреты онлайн-заработка в интернете, полезные советы путешественникам и нюансы путешествий</p>
+    <p>Сайт Дневник путешественника - это блог о самостоятельных путешествиях без предрассудков, без сомнений, без границ! </p>
+    </div>
+          <div class="flex-3 quickref">
+            <h4>Быстрые ссылки:</h4>
+              <ul>
+              <li><a href="#">Скидки и лучшие цены</a></li>
+              <li><a href="#">Лайфхаки</a></li>
+              <li><a href="#">Наши поездки</a></li>
+              <li><a href="#">Советы путешественникам</a></li>
+              <li><a href="#">Купоны и промокоды</a></li>
+              <li> <a href="#">Распродажи</a></li>
+            </ul>
+             </div>
+        <div class="social flex-3">
+          <h3>Мои контакты</h3>
+          <nav>
+            <a href="#" class="facebook"></a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="youtube"></a>
+                <a href="#" class="instagram"></a>
+      </div>
+      </footer>
     </body>
 
     </html>

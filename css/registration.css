@@ -1,15 +1,26 @@
-@import "css/style.css";
+@import "style.css";
+@import "flex.css";
 
-.block1{
-width:400px;
-height:500px;
-border:2px solid orangered;
+.regform{
+    width:450px;
+    height:500px;
+    margin:10px auto;
+    background:grey;
+    padding:20px;  
+    border:3px solid orange;
 }
-
-input[type="submit"]{
-    border: 0;
-    padding: 5px 15px;
-    border-radius: 5px;
-    background: orangered;
-    color:white;
+h2{
+    cursor: help;
+    padding-left:10px;
+}
+.label {
+    padding-left:20px;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+input{
+    margin-top:10px;
+    height:30px;
+    width:300px;
+    border-radius:20px; 
 }

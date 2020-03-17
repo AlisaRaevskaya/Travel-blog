@@ -3,30 +3,35 @@
     <head>
         <meta charset="utf-8">
         <title>Регистрация</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/registration.css">
     </head>
 <body>
-  <main>
-    <div class="block1">
- <form action="#" enctype="multipart/form-data" method="POST">
-    <p>Авторы блога и постоянные читатели, которые регулярно участвуют в комментировании статьей блога, могут зарегистрироваться на сайте.</p>
-    <p><strong>Регистрация на сайте</strong></p>
-      <div> <label for="name"></label>
-       <input required id="name" type="text" name="user_name" value="Имя" placeholder="Имя"></div>
-      <div><label for="last name"></label>
-         <input equired id="last name" type="text" name="last_name" value="Фамилия" minlength="2" maxlength="15"></div>
-         <div><label for="login"></label>
-   <input required type="text" id="login" name="login" value="Логин" maxlength="15" minlength="2"></div>
-   <div><label for="emai"></label>
-         <input required id="emai" type="email" value="Адрес почты" minlegth="7" maxlength="20"></div>
-         <div><label for="password"></label>
-   <input required type="password" id="password" value="Пароль" minlength="5" maxlength="15"></div>
-   <div><label for="second_password"></label>
-   <input type="password" id="second_password" value="Повторный пароль" minlength="5" maxlength="15"></div>
-   <label for="button"></label>
+    <form class="regform" action="#" method="POST">
+        <h2>Регистрация на сайте</h2>
+  <div> <label for="name" class="label">Имя</label>
+       <input required id="name" type="text" name="user_name">
+      </div>
+  <div>
+        <label for="last name"class="label">Фамилия</label>
+        <input equired id="last name" type="text" name="last_name" minlength="2" maxlength="15">
+  </div>
+  <div>
+    <label for="login"class="label" >Логин</label>
+   <input required type="text" id="login" name="login"  maxlength="15" minlength="2">
+  </div>
+   <div>
+     <label for="emai" class="label">Email</label>
+    <input required id="emai" type="email"minlegth="7" maxlength="20">
+  </div>
+  <div>
+    <label for="password"class="label" >Пароль</label>
+   <input required type="password" id="password"  minlength="5" maxlength="15">
+  </div>
+   <div>
+    <label for="second_password" class="label">Пароль еще раз</label>
+   <input type="password" id="second_password" minlength="5" maxlength="15">
+  </div>
      <input type="submit" id="button" value="Зарегистрироваться">
    </form>
-  </div>
-</main>
-   </html>
    </body>
+   </html>
