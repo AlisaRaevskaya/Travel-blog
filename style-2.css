@@ -1,0 +1,52 @@
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.flex-12 {
+    flex: 100%;
+}
+
+.flex-2 {
+    flex: 50%;
+}
+
+.flex-3 {
+    flex: 25%;
+}
+
+.flex-4{
+    flex: 33.3333333%;
+}
+.flex-6{
+    flex:50%;
+}
+@media screen and(max-width:480px){
+.flex-xs-12{
+        flex:100%;}
+
+.flex-xs-column:{
+            flex-direction:column;}
+}
+
+
+@media screen and
+(max-width:480px),
+(max-width:770px){
+
+.flex-sm-6{
+        flex:50%;}
+
+.flex-elements div{
+    display:none;
+}
+
+}
